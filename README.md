@@ -70,3 +70,6 @@ Elastic Beanstalk Deployment
 - [x] ***The project demonstrates the ability to create functional cloud deployments***: An endpoint URL for a running elastic beanstalk deployment (EB_URL) has been submitted along with the project submission. This endpoint responds to valid GET requests including:
 http://{{EB_URL}}/filteredimage?image_url=https://timedotcom.files.wordpress.com/2019/03/kitten-report.jpg
 
+# Optional
+
+Is is created a dockerfile and run the service in a docker image in local.
