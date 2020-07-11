@@ -1,6 +1,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import {filterImageFromURL, deleteLocalFiles} from './util/util';
+import { RESIZE_BEZIER } from 'jimp';
 
 (async () => {
 
@@ -29,29 +30,24 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
     if(!url){
         return res.status(400).send({message: 'Image url is required'})
     }
+    try{
 
   //    2. call filterImageFromURL(image_url) to filter the image
   // Wait until the promise is filtered.
-    const urlFilteredImage = await filterImageFromURL(url);
+  const urlFilteredImage = await filterImageFromURL(url);
 
   //    3. send the resulting file in the response
   // As the method deleteLocalFiles() needs an Array<string> to unsync each local path, the path is first send and then stored in an array
+  //   4. deletes any files on the server on finish of the response
 
-  res.sendFile(urlFilteredImage, (err) => {
-    deleteLocalFiles(urlFilteredImage);
-    if(err){
-        console.log(err);
+    res.sendFile(urlFilteredImage, (err) => {
+      deleteLocalFiles(urlFilteredImage);
+    })
+   } catch (err){
+      console.log(err)
+      res.status(200).send("Failed the image filtering")
     }
-
-   //   4. deletes any files on the server on finish of the response
-
-
-  } )
-
   });
-
-
-
   // QUERY PARAMATERS
   //    image_url: URL of a publicly accessible image
   // RETURNS
