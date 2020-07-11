@@ -61,14 +61,24 @@ Development Server
 - [x] ***The project demonstrates an understanding of RESTFUL design***: The stubbed @TODO1 endpoint in src/server.ts is completed and accepts valid requests including:
 http://localhost:{{PORT}}/filteredimage?image_url=https://cdn.fileinfo.com/img/ss/lg/jpeg_43.jpg
 
+![todo1_local](https://github.com/mblazleon/udagram/blob/dev/todo1_local.png)
+
 - [x] ***The project demonstrates an understanding of HTTP status codes***: Successful responses have a 200 code, at least one error code for caught errors (i.e. 422)
 
 Elastic Beanstalk Deployment
 
 - [x] ***The project demonstrates an understanding of AWS Elastic Beanstalk’s CLI and Console Dashboard***: The project was deployed using the AWS Elastic Beanstalk CLI eb init, eb create, and eb deploy commands. A screenshot of the elastic beanstalk application dashboard is included in a deployment_screenshot directory.
 
-
+![eb](https://github.com/mblazleon/udagram/blob/dev/eb.png)
 
 - [x] ***The project demonstrates the ability to create functional cloud deployments***: An endpoint URL for a running elastic beanstalk deployment (EB_URL) has been submitted along with the project submission. This endpoint responds to valid GET requests including:
 http://{{EB_URL}}/filteredimage?image_url=https://cdn.fileinfo.com/img/ss/lg/jpeg_43.jpg
+
+This is the url:
+
+http://udagram-rblazleon-dev-dev2.us-west-2.elasticbeanstalk.com/filteredimage?image_url=https://cdn.fileinfo.com/img/ss/lg/jpeg_43.jpg
+
+![todo1_eb](https://github.com/mblazleon/udagram/blob/dev/todo1_eb.png)
+
+
 
