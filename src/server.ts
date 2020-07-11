@@ -47,13 +47,6 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
 
 
 
-
-
-
-
-
-
-
   // QUERY PARAMATERS
   //    image_url: URL of a publicly accessible image
   // RETURNS
