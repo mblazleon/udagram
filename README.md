@@ -82,3 +82,6 @@ http://udagram-rblazleon-dev-dev2.us-west-2.elasticbeanstalk.com/filteredimage?i
 
 
 
+# Optional
+
+Is is created a dockerfile and run the service in a docker image in local.
