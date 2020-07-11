@@ -22,12 +22,15 @@ import { RESIZE_BEZIER } from 'jimp';
   //    2. call filterImageFromURL(image_url) to filter the image
   //    3. send the resulting file in the response
   //   4. deletes any files on the server on finish of the response
-  
+
+  // @ts-ignore
   app.get('/filteredimage', async (req: Request, res: Response) => {
+    // @ts-ignore
     const url = req.query.image_url;
   //    1. validate the image_url query
 
     if(!url){
+      // @ts-ignore
         return res.status(400).send({message: 'Image url is required'})
     }
     try{
@@ -39,12 +42,14 @@ import { RESIZE_BEZIER } from 'jimp';
   //    3. send the resulting file in the response
   // As the method deleteLocalFiles() needs an Array<string> to unsync each local path, the path is first send and then stored in an array
   //   4. deletes any files on the server on finish of the response
-
+  // @ts-ignore
     res.sendFile(urlFilteredImage, (err) => {
+      // @ts-ignore
       deleteLocalFiles(urlFilteredImage);
     })
    } catch (err){
       console.log(err)
+      // @ts-ignore
       res.status(200).send("Failed the image filtering")
     }
   });

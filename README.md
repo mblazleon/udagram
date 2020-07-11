@@ -65,8 +65,10 @@ http://localhost:{{PORT}}/filteredimage?image_url=https://cdn.fileinfo.com/img/s
 
 Elastic Beanstalk Deployment
 
-- [ ] ***The project demonstrates an understanding of AWS Elastic Beanstalk’s CLI and Console Dashboard***: The project was deployed using the AWS Elastic Beanstalk CLI eb init, eb create, and eb deploy commands. A screenshot of the elastic beanstalk application dashboard is included in a deployment_screenshot directory.
+- [x] ***The project demonstrates an understanding of AWS Elastic Beanstalk’s CLI and Console Dashboard***: The project was deployed using the AWS Elastic Beanstalk CLI eb init, eb create, and eb deploy commands. A screenshot of the elastic beanstalk application dashboard is included in a deployment_screenshot directory.
 
-- [ ] ***The project demonstrates the ability to create functional cloud deployments***: An endpoint URL for a running elastic beanstalk deployment (EB_URL) has been submitted along with the project submission. This endpoint responds to valid GET requests including:
+
+
+- [x] ***The project demonstrates the ability to create functional cloud deployments***: An endpoint URL for a running elastic beanstalk deployment (EB_URL) has been submitted along with the project submission. This endpoint responds to valid GET requests including:
 http://{{EB_URL}}/filteredimage?image_url=https://cdn.fileinfo.com/img/ss/lg/jpeg_43.jpg
 
