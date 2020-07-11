@@ -78,7 +78,7 @@ This is the url:
 
 http://udagram-rblazleon-dev-dev2.us-west-2.elasticbeanstalk.com/filteredimage?image_url=https://cdn.fileinfo.com/img/ss/lg/jpeg_43.jpg
 
-![todo1_eb](https://github.com/mblazleon/udagram/blob/dev/todo1_eb.png)
+![todo1_eb](https://github.com/mblazleon/udagram/blob/master/deployment_screenshots/eb_dashboard.png)
 
 
 
